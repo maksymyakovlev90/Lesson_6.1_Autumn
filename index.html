@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework</title>
+</head>
+<body>
+    <header class="header">
+        <h1><a href="https://maksymyakovlev90.github.io/Lesson_6.2_Autumn/" target="blanc">Fig<span>m</span>a</a></h1>
+    </header>
+    <main class="content">
+        <div class="wrapper">
+            <h3>Властивості кордонів CSS</h3>
+                <p>
+                    Властивості CSS <mark>border</mark> дозволяють задавати стиль, ширину та колір кордрону елемента. 
+                </p>
+                <div class="exp1">
+                    В мене є кордони з усіх сторін.
+                </div>
+                <div class="exp2">
+                    В мене є червоний нижній кордон.
+                </div> 
+                <div class="exp3">
+                    В мене округлі кордони.
+                </div>
+                <div class="exp4">
+                    В мене синій кордон ліворуч.
+                </div> 
+            <h3>Стилі кордонів</h3>
+                <p>
+                    Властивість <mark>border-style</mark> вказує тип кордону, що відображається. 
+                </p>
+                <p>
+                    Допустимі такі значення:  
+                </p>
+                <ul>
+                    <li><mark>dotted</mark> - Визначає точковий кордон</li>
+                    <li><mark>dashed</mark> - Визначає пунктирний кордон</li>
+                    <li><mark>solid</mark> - Визначає суцільний кордон</li>
+                    <li><mark>double</mark> - Визначає подвійний кордон</li>
+                    <li><mark>groove</mark> - Визначає 3D-канавку кордону. Ефект залежить від значення кольору кордону</li>
+                    <li><mark>ridge</mark> - Визначає тривимірний ребристий кордон. Ефект залежить від значення кольору кордону</li>
+                    <li><mark>inset</mark> - Визначає 3D-вставку кордону. Ефект залежить від значення кольору кордону</li>
+                    <li><mark>outset</mark> - Визначає тривимірний початок кордону. Ефект залежить від значення кольору кордону</li>
+                    <li><mark>none</mark> - Не визначає кордон</li>
+                    <li><mark>hidden</mark> - Визначає прихований кордон</li>
+                </ul>
+                <p>
+                    Властивість <mark>border-style</mark> може мати від одного до чотирьох значень (для верхнього кордону, правого кордону, нижнього кордону і лівого кордону).
+                </p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="border-style">
+                        p.dotted {border-style: dotted;}<br>
+                        p.dashed {border-style: dashed;}<br>
+                        p.solid {border-style: solid;}<br>
+                        p.double {border-style: double;}<br>
+                        p.groove {border-style: groove;}<br>
+                        p.ridge {border-style: ridge;}<br>
+                        p.inset {border-style: inset;}<br>
+                        p.outset {border-style: outset;}<br>
+                        p.none {border-style: none;}<br>
+                        p.hidden {border-style: hidden;}<br>
+                        p.mix {border-style: dotted dashed solid double;}<br>
+                    </div>
+                    <p>Result</p>
+                    <div class="result">
+                        <div class="res1">A dotted border.</div>
+                        <div class="res2">A dashed border.</div>
+                        <div class="res3">A solid border.</div>
+                        <div class="res4">A double border.</div>
+                        <div class="res5">A groove border. The effect depends on the border-color value.</div>
+                        <div class="res6">A ridge border. The effect depends on the border-color value.</div>
+                        <div class="res7">An inset border. The effect depends on the border-color value.</div>
+                        <div class="res8">An outset border. The effect depends on the border-color value.</div>
+                        <div class="res9">No border.</div>
+                        <div class="res10">A hidden border.</div>
+                        <div class="res11">A mixed border.</div>
+                    </div>
+                </div>
+                <div class="note">
+                    <strong>Примітка:</strong> Ніякі інші властивості кордонів CSS, описані нижче, не матимуть жодного ефекту, якщо не встановлено властивість <mark>border-style</mark>!
+                </div>
+                <h3>Ширина кордону</h3>
+                <p>
+                    Властивість <mark>border-width</mark> задає ширину чотирьох кордонів.
+                </p>
+                <p>
+                    Ширина може бути задана як конкретний розмір (px, PT, cm, EM і т.д.) або за допомогою одного з трьох попередньо визначених значень: тонкий, середній, або товстий.
+                </p>
+                <p>
+                    Властивість <mark>border-width</mark> може мати від одного до чотирьох значень (для верхнього кордону, правого кордону, нижнього кордону і лівого кордону).
+                </p>
+                <div class="border-width">
+                    5px border-width
+                </div>
+                <h3>Колір кордону</h3>
+                <p>
+                    Властивості <mark>border-color</mark> використовується для задання кольору чотирьох кордонів.
+                </p>
+                <p>
+                    Колір може бути встановлений:
+                </p>
+                <ul>
+                    <li>Name-вкажіть ім'я, наприклад "Red"</li>
+                    <li>Hex-вкажіть шістнадцяткове значення, наприклад "#ff0000"</li>
+                    <li>RGB-вкажіть значення RGB, наприклад "RGB (255, 0, 0)"</li>
+                    <li>Прозорий</li>
+                </ul>
+                <p>
+                    Властивість <mark>border-color</mark> може мати від одного до чотирьох значень (для верхнього кордону, правого кордону, нижнього кордону і лівого кордону). 
+                </p>
+                <p>
+                    Якщо <mark>border-color</mark> не заданий, він успадковує колір елемента.
+                </p>
+                <div class="border-color">
+                    Red border
+                </div>
+                <h3>Кордон-окремі сторони</h3>
+                <p>
+                    З наведених вище прикладів видно, що можна вказати інший кордон для кожної сторони.
+                </p>
+                <p>
+                    У CSS є властивість для вказання кожного з кордонів (верхнього, правого, нижнього і лівого):
+                </p>
+                <div class="border-align">
+                    Different Border Styles
+                </div>
+                <p>
+                    Якщо властивість <mark>border-style</mark> має чотири значення:
+                </p>
+                <ul>
+                    <li><strong>стиль кордону: пунктирний суцільний подвійний пунктирний;</strong>
+                        <ul>
+                            <li>Верхній кордон пунктирний</li>
+                            <li>Правий кордон суцільний</li>
+                            <li>Нижній кордон подвійний</li>
+                            <li>Лівий кордон пунктирний</li>
+                        </ul>
+                    </li>    
+                </ul>
+                <p>
+                    Якщо властивість <mark>border-style</mark> має три значення:
+                </p>
+                <ul>
+                    <li><strong>Прикордонний стиль: точковий суцільний подвійний;</strong>
+                        <ul>
+                            <li>Верхній кордон пунктирний</li>
+                            <li>Правий і лівий кордон суцільні</li>
+                            <li>Нижній кордон подвійний</li>
+                        </ul>
+                    </li>    
+                </ul>
+                <p>
+                    Якщо властивість <mark>border-style</mark> має два значення:
+                </p>
+                <ul>
+                    <li><strong>кордон стилю: пунктирний твердий;</strong>
+                        <ul>
+                            <li>Верхній та нижній кордон пунктирні</li>
+                            <li>правий і лівий кордон суцільні</li>
+                        </ul>
+                    </li>    
+                </ul>
+                <p>
+                    Якщо властивості <mark>border-style</mark> має одне значення:
+                </p>
+                <ul>
+                    <li><strong>кордон стилю: пунктирний;</strong>
+                        <ul>
+                            <li>всі чотири кордони пунктирні</li>
+                        </ul>
+                    </li>    
+                </ul>
+                <p>
+                    Властивість <mark>border-style</mark> використовується у наведеному вище прикладі. Однак, він також працює з <mark>border-width</mark> та <mark>border-color</mark>.
+                </p>
+                <h3>Скорочена властивість кордонів</h3>
+                <p>
+                    Як видно з наведених вище прикладів, є багато властивостей, які слід враховувати під час роботи з кордонами.
+                </p>
+                <p>
+                    Щоб скоротити код, можна вказати всі властивості окремих кордонів в одній властивості.
+                </p>
+                <p>
+                    Властивість <mark>border</mark> є скороченою властивістю для наступних окремих властивостей кордону:
+                </p>
+                <ul>
+                    <li><mark>border-width</mark></li>
+                    <li><mark>border-style</mark> (required)</li>
+                    <li><mark>border-color</mark></li>
+                </ul>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="border-style">
+                        p {border: 5px solid red;}
+                    </div>
+                    <p>Result</p>
+                    <div class="result">
+                        <div class="border1">
+                            Some text
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Можна також вказати всі властивості окремих кордонів тільки для одного боку:
+                </p>
+                <div class="example">
+                    <h3>Лівий кордон</h3>
+                    <div class="border-style">
+                        p {<br>border-left: 6px solid red;<br>
+                        background-color: lightgrey;<br>}
+                    </div>
+                    <p>Result</p>
+                    <div class="result">
+                        <div class="border2">
+                            Some text
+                        </div>
+                    </div>
+                </div>
+                <div class="example">
+                    <h3>Нижній кордон</h3>
+                    <div class="border-style">
+                        p {<br>border-bottom: 6px solid red;<br>
+                        background-color: lightgrey;<br>}
+                    </div>
+                    <p>Result</p>
+                    <div class="result">
+                        <div class="border3">
+                            Some text
+                        </div>
+                    </div>
+                </div>
+                <h3>Закруглені кордони</h3>
+                <p>
+                    Властивість <mark>border-radius</mark> використовується для додавання округлених кордонів до елемента:
+                </p>
+                <div class="normal-border">Normal border</div>
+                <div class="round-border">Round border</div>
+                <div class="rounder-border">Rounder border</div>
+                <div class="roundest-border">Roundest border</div>
+                <h3>Всі властивості кордонів CSS</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Властивість</th>
+                            <th>Опис</th>
+                        </tr>
+                        <tr>
+                            <td>border</td>
+                            <td>Задає всі властивості кордону в одному рядку</td>
+                        </tr>
+                        <tr>
+                            <td>border-bottom</td>
+                            <td>Задає всі властивості нижнього кордону в одному рядку</td>
+                        </tr>
+                        <tr>
+                            <td>border-bottom-color</td>
+                            <td>Задає колір нижньому кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-bottom-style</td>
+                            <td>Задає стиль нижньому кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-bottom-width</td>
+                            <td>Задає ширину нижньому кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-color</td>
+                            <td>Задає колір чотирьох кордонів</td>
+                        </tr>
+                        <tr>
+                            <td>border-left</td>
+                            <td>Задає всі властивості лівого кордону в одному рядку</td>
+                        </tr>
+                        <tr>
+                            <td>border-left-color</td>
+                            <td>Задає колір лівого кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-left-style</td>
+                            <td>Задає стиль лівого кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-left-width</td>
+                            <td>Задає ширину лівого кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-radius</td>
+                            <td>Встановлює всі чотири межі-властивості радіусу для округлених кутів</td>
+                        </tr>
+                        <tr>
+                            <td>border-right</td>
+                            <td>Задає всі властивості правого кордону в одному рядку</td>
+                        </tr>
+                        <tr>
+                            <td>border-right-color</td>
+                            <td>Задає колір правого кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-right-style</td>
+                            <td>Задає стиль правого кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-right-width</td>
+                            <td>Задає ширину правого кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-style</td>
+                            <td>Задає стиль чотирьох кордонів</td>
+                        </tr>
+                        <tr>
+                            <td>border-top</td>
+                            <td>Задає всі властивості верхнього краю в одному рядку</td>
+                        </tr>
+                        <tr>
+                            <td>border-top-color</td>
+                            <td>Задає колір верхнього кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-top-style</td>
+                            <td>Задає стиль верхнього кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-top-width</td>
+                            <td>Задає ширину верхнього кордону</td>
+                        </tr>
+                        <tr>
+                            <td>border-width</td>
+                            <td>Задає ширину чотирьох кордонів</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="est">Copyright 2018-2020 HTML5CSS</div>
+    </footer>
+    
+</body>
+</html>

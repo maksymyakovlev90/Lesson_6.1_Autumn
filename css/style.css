@@ -1,0 +1,296 @@
+@import "null.css";
+
+body{
+    background-color: rgb(243, 243, 243);
+    font-family: "Verdana", sans-serif;
+}
+
+span{
+    color: rgb(2, 128, 2);
+}
+
+h3{
+    font-size: 30px;
+    margin: 15px 0 15px 20px;
+}
+
+mark{
+    background-color: rgb(201, 201, 201);
+    color: rgb(216, 58, 58);
+    font-family: "Segoe UI", monospace;
+}
+
+ul{
+   margin: 15px 0 15px 20px;
+   font-size: 20px;
+}
+
+li{
+    list-style-type: disc;
+    margin-left: 40px;
+    line-height: 25px;
+}
+
+table{
+    background-color: rgb(235, 231, 231);
+    border: 1px solid black;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 15px 0 15px 20px;
+}
+
+th, td{
+    padding: 5px;
+    background-color: rgb(201, 201, 201);
+    border: 1px solid black;
+}
+
+.header{
+    background-color: white;
+    padding: 30px 0 30px 30px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(78, 76, 76);
+}
+
+p{
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 0 15px 20px;
+}
+
+.exp1{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 20px 15px 20px;
+    font-size: 20px;
+}
+
+.exp2{
+    border-bottom: 1px solid red;
+    padding: 10px;
+    margin: 0 20px 15px 20px;
+    font-size: 20px;
+}
+
+.exp3{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 20px 15px 20px;
+    font-size: 20px;
+}
+
+.exp4{
+    background-color: rgb(143, 203, 238);
+    border-left: 5px solid rgb(0, 77, 179);
+    padding: 10px;
+    margin: 0 20px 15px 20px;
+    font-size: 20px;
+}
+
+.example{
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+    margin: 0 20px 15px 20px;
+    font-size: 20px;
+}
+
+.border-style{
+    background-color: #fff;
+    border-left: 5px solid rgb(105, 168, 11);
+    padding: 10px;
+    margin: 0 20px 15px 20px;
+    font-size: 20px;
+    min-width: fit-content;
+}
+
+.result{
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 20px 15px 20px;
+    font-size: 20px;
+}
+
+.res1{
+    border: 3px black;
+    border-style: dotted;
+    margin: 10px;
+    padding: 5px;
+}
+
+.res2{
+    border: 3px black;
+    border-style: dashed;
+    margin: 10px;
+    padding: 5px;
+}
+
+.res3{
+    border: 3px black;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+.res4{
+    border: 3px black;
+    border-style: double;
+    margin: 10px;
+    padding: 5px;
+}
+
+.res5{
+    border: 3px black;
+    border-style: groove;
+    margin: 10px;
+    border-color: brown;
+    padding: 5px;
+}
+
+.res6{
+    border: 3px black;
+    border-style: ridge;
+    margin: 10px;
+    border-color: brown;
+    padding: 5px;
+}
+
+.res7{
+    border: 3px black;
+    border-style: inset;
+    margin: 10px;
+    border-color: greenyellow;
+    padding: 5px;
+}
+
+.res8{
+    border: 3px black;
+    border-style: outset;
+    margin: 10px;
+    border-color: greenyellow;
+    padding: 5px;
+}
+
+.res9{
+    border: 3px black;
+    border-style: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+.res10{
+    border: 3px black;
+    border-style: hidden;
+    margin: 10px;
+    padding: 5px;
+}
+
+.res11{
+    border: 3px black;
+    border-style: dotted dashed solid double;
+    margin: 10px;
+    padding: 5px;
+}
+
+.note{
+    background-color: #ffc;
+    border-left: 5px solid #ffeb3b;
+    padding: 10px;
+    margin: 0 20px 15px 20px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.border-width{
+    border: 5px black;
+    border-style: solid;
+    border-width: thick;
+    padding: 10px;
+    margin: 0 20px 15px 20px;
+    font-size: 20px;
+}
+
+.border-color{
+    border: 5px;
+    border-style: solid;
+    border-color: red;
+    padding: 10px;
+    margin: 0 20px 15px 20px;
+    font-size: 20px;
+}
+
+.border-align{
+    border: 5px black;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    padding: 10px;
+    margin: 0 20px 15px 20px;
+    font-size: 20px;
+}
+
+.border1{
+    border: 5px solid red;
+    padding: 5px;
+}
+
+.border2{
+    border-left: 6px solid red;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 10px;
+}
+
+.border3{
+    border-bottom: 6px solid red;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 10px;
+}
+
+.normal-border{
+    border: 3px solid red; 
+    margin: 15px 20px 15px 20px;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.round-border{
+    border: 3px solid red;
+    border-radius: 5px; 
+    margin: 15px 20px 15px 20px;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.rounder-border{
+    border: 3px solid red;
+    border-radius: 8px;
+    margin: 0 20px 15px 20px;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.roundest-border{
+    border: 3px solid red;
+    border-radius: 12px; 
+    margin: 0 20px 15px 20px;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.est{
+    background-color: white;
+    text-align: center;
+    padding: 30px 0 30px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(78, 76, 76);
+}
+
+
+
+
+
